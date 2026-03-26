@@ -1,19 +1,10 @@
 """
-stage01_extract_femi.py - Stage 01: Extract
-(NO EDITS REQUIRED IN THIS FILE)
+    stage01_extract_femi.py - Stage 01: Extract
 
 Source: API
 Sink: raw JSON object + raw JSON file
 
-The Extract stage is responsible for retrieving data
-from the source (in this case, an API)
-and saving it to a file.
-It also returns the extracted data as a Python object
-for use in subsequent stages.
-
-Notes
-
-- This file should not require modification.
+    End
 """
 
 # ============================================================

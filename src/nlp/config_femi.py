@@ -1,6 +1,5 @@
 """
-config_femi.py
-(EDIT YOUR COPY OF THIS FILE)
+    config_femi.py
 
 Purpose
 

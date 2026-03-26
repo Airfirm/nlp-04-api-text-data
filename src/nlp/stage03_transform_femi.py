@@ -1,6 +1,5 @@
 """
-stage03_transform_femi.py
-(EDIT YOUR COPY OF THIS FILE)
+    stage03_transform_femi.py
 
 Source: validated JSON object
 Sink: Polars DataFrame
@@ -15,18 +14,7 @@ Analytical Questions
 - How can records be normalized into tabular form?
 - What derived fields would support analysis?
 
-Notes
 
-Following our process, do NOT edit this _case file directly,
-keep it as a working example.
-
-In your custom project, copy this _case.py file and
-append with _yourname.py instead.
-
-Then edit your copied Python file to:
-- extract the fields needed for your analysis,
-- normalize records into a consistent structure,
-- create any derived fields required.
 """
 
 # ============================================================

@@ -1,13 +1,9 @@
 """
 stage04_load_femi.py
-(NO EDITS REQUIRED IN THIS FILE)
 
 Source: DataFrame
 Sink: CSV file
 
-Notes
-
-- This file should not require modification.
 """
 
 # ============================================================

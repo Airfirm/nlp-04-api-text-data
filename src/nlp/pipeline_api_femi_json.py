@@ -1,6 +1,5 @@
 """
-pipeline_api_femi_json.py
-(NO EDITS REQUIRED IN THIS FILE)
+    pipeline_api_femi_json.py
 
 Purpose
 
@@ -17,18 +16,7 @@ Analytical Questions
 - How can we load the transformed data into a sink (like a CSV file)?
 
 
-Notes
 
-- This file should not require modification.
-- This is the main pipeline script that orchestrates the entire EVTL process.
-- It assumes a standard ETL pipeline enhanced with a VALIDATE stage, making it an EVTL pipeline.
-- The stages are modularized into separate files for clarity and maintainability.
-- Each stage has its own source and sink, which are clearly indicated in the stage files.
-- The configuration values (like API URL and file paths) are stored in a separate config file.
-
-Run from root project folder with:
-
-  uv run python -m nlp.pipeline_api_json
 """
 
 # ============================================================
