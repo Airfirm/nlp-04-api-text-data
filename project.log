@@ -57,3 +57,97 @@ shape: (5, 6)
 2026-03-26 12:32:54 | INFO | CI | ========================
 2026-03-26 12:32:54 | INFO | CI | Pipeline executed successfully!
 2026-03-26 12:32:54 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | === RUN START ===
+2026-03-26 14:56:10 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-03-26 14:56:10 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-03-26 14:56:10 | INFO | CI | python=3.14.2
+2026-03-26 14:56:10 | INFO | CI | os=Windows 11
+2026-03-26 14:56:10 | INFO | CI | shell=powershell
+2026-03-26 14:56:10 | INFO | CI | cwd=.
+2026-03-26 14:56:10 | INFO | CI | github_actions=False
+2026-03-26 14:56:10 | INFO | CI | START PIPELINE
+2026-03-26 14:56:10 | INFO | CI | ROOT_PATH = .
+2026-03-26 14:56:10 | INFO | CI | DATA_PATH = data
+2026-03-26 14:56:10 | INFO | CI | RAW_PATH = data\raw
+2026-03-26 14:56:10 | INFO | CI | PROCESSED_PATH = data\processed
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | SOURCE PATH = https://jsonplaceholder.typicode.com/comments
+2026-03-26 14:56:10 | INFO | CI | SINK PATH = data\raw\femi_raw.json
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | JSON STRUCTURE INSPECTION:
+2026-03-26 14:56:10 | INFO | CI | Top-level type: list
+2026-03-26 14:56:10 | INFO | CI | Keys in first record: ['postId', 'id', 'name', 'email', 'body']
+2026-03-26 14:56:10 | INFO | CI | Field types:
+2026-03-26 14:56:10 | INFO | CI | postId: int
+2026-03-26 14:56:10 | INFO | CI | id: int
+2026-03-26 14:56:10 | INFO | CI | name: str
+2026-03-26 14:56:10 | INFO | CI | email: str
+2026-03-26 14:56:10 | INFO | CI | body: str
+2026-03-26 14:56:10 | INFO | CI | Validation passed.
+2026-03-26 14:56:10 | INFO | CI | Sink: validated JSON object
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 14:56:10 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-03-26 14:56:10 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | === RUN START ===
+2026-03-26 15:15:24 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-03-26 15:15:24 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-03-26 15:15:24 | INFO | CI | python=3.14.2
+2026-03-26 15:15:24 | INFO | CI | os=Windows 11
+2026-03-26 15:15:24 | INFO | CI | shell=powershell
+2026-03-26 15:15:24 | INFO | CI | cwd=.
+2026-03-26 15:15:24 | INFO | CI | github_actions=False
+2026-03-26 15:15:24 | INFO | CI | START PIPELINE
+2026-03-26 15:15:24 | INFO | CI | ROOT_PATH = .
+2026-03-26 15:15:24 | INFO | CI | DATA_PATH = data
+2026-03-26 15:15:24 | INFO | CI | RAW_PATH = data\raw
+2026-03-26 15:15:24 | INFO | CI | PROCESSED_PATH = data\processed
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | SOURCE PATH = https://jsonplaceholder.typicode.com/comments
+2026-03-26 15:15:24 | INFO | CI | SINK PATH = data\raw\femi_raw.json
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | JSON STRUCTURE INSPECTION:
+2026-03-26 15:15:24 | INFO | CI | Top-level type: list
+2026-03-26 15:15:24 | INFO | CI | Keys in first record: ['postId', 'id', 'name', 'email', 'body']
+2026-03-26 15:15:24 | INFO | CI | Field types:
+2026-03-26 15:15:24 | INFO | CI | postId: int
+2026-03-26 15:15:24 | INFO | CI | id: int
+2026-03-26 15:15:24 | INFO | CI | name: str
+2026-03-26 15:15:24 | INFO | CI | email: str
+2026-03-26 15:15:24 | INFO | CI | body: str
+2026-03-26 15:15:24 | INFO | CI | Validation passed.
+2026-03-26 15:15:24 | INFO | CI | Sink: validated JSON object
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | Transformation complete.
+2026-03-26 15:15:24 | INFO | CI | Shape: (500, 15)
+2026-03-26 15:15:24 | INFO | CI | Columns: ['post_id', 'comment_id', 'name', 'email', 'email_domain', 'body', 'body_clean', 'body_preview', 'name_length', 'email_length', 'body_length_chars', 'body_length_words', 'line_count', 'is_multiline', 'has_long_body']
+2026-03-26 15:15:24 | INFO | CI | DataFrame preview:
+shape: (5, 15)
+┌─────────┬────────────┬─────────────────────────────────┬────────────────────────┬───┬───────────────────┬────────────┬──────────────┬───────────────┐
+│ post_id ┆ comment_id ┆ name                            ┆ email                  ┆ … ┆ body_length_words ┆ line_count ┆ is_multiline ┆ has_long_body │
+│ ---     ┆ ---        ┆ ---                             ┆ ---                    ┆   ┆ ---               ┆ ---        ┆ ---          ┆ ---           │
+│ i64     ┆ i64        ┆ str                             ┆ str                    ┆   ┆ i64               ┆ i64        ┆ bool         ┆ bool          │
+╞═════════╪════════════╪═════════════════════════════════╪════════════════════════╪═══╪═══════════════════╪════════════╪══════════════╪═══════════════╡
+│ 1       ┆ 1          ┆ id labore ex et quam laborum    ┆ Eliseo@gardner.biz     ┆ … ┆ 21                ┆ 4          ┆ true         ┆ true          │
+│ 1       ┆ 2          ┆ quo vero reiciendis velit simi… ┆ Jayne_Kuhic@sydney.com ┆ … ┆ 25                ┆ 4          ┆ true         ┆ true          │
+│ 1       ┆ 3          ┆ odio adipisci rerum aut animi   ┆ Nikita@garfield.biz    ┆ … ┆ 29                ┆ 4          ┆ true         ┆ true          │
+│ 1       ┆ 4          ┆ alias odio sit                  ┆ Lew@alysha.tv          ┆ … ┆ 23                ┆ 4          ┆ true         ┆ true          │
+│ 1       ┆ 5          ┆ vero eaque aliquid doloribus e… ┆ Hayden@althea.biz      ┆ … ┆ 20                ┆ 4          ┆ true         ┆ false         │
+└─────────┴────────────┴─────────────────────────────────┴────────────────────────┴───┴───────────────────┴────────────┴──────────────┴───────────────┘
+2026-03-26 15:15:24 | INFO | CI | Sink: Polars DataFrame created
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | STAGE 04: LOAD starting...
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | SINK PATH = data\processed\femi_processed.csv
+2026-03-26 15:15:24 | INFO | CI | ========================
+2026-03-26 15:15:24 | INFO | CI | Pipeline executed successfully!
+2026-03-26 15:15:24 | INFO | CI | ========================
