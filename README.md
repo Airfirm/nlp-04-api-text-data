@@ -1,5 +1,88 @@
 # nlp-04-api_text-data
 
+# NLP API Text Data Project
+
+## Overview
+
+This project builds an **EVTL pipeline** for working with API-based JSON text data.
+
+EVTL stands for:
+
+- **Extract** – request raw JSON data from an API
+- **Validate** – inspect and confirm the JSON structure and required fields
+- **Transform** – reshape the data and create analytical features
+- **Load** – save the processed output for later analysis
+
+The project uses Python and Polars to turn raw API comment data into a structured, analysis-ready dataset.
+
+---
+
+## Project Goal
+
+The goal of this project is to take raw JSON data from an API and transform it into a clean tabular dataset that can support exploratory analysis and future NLP work.
+
+This project focuses on:
+
+- understanding JSON structure before processing
+- validating required fields and data types
+- transforming nested or semi-structured API data into a DataFrame
+- creating derived features from text fields
+- preparing data for reporting, analysis, and downstream text processing
+
+---
+
+## Source Data
+
+The raw API response contains comment-style records with fields such as:
+
+- `postId`
+- `id`
+- `name`
+- `email`
+- `body`
+
+## Pipeline Structure
+
+## The project is organized into separate pipeline stages:
+
+- config_femi.py – configuration values and paths
+- stage01_extract_femi.py – extracts raw JSON from the API
+- stage02_validate_femi.py – validates structure and required fields
+- stage03_transform_femi.py – transforms the JSON into a structured DataFrame
+- stage04_load_femi.py – loads the processed data to the final output
+- pipeline_api_femi_json.py – main orchestrator that runs all stages in order
+
+Run with:
+
+```bash
+uv run python -m nlp.pipeline_api_femi_json
+
+
+Custom Transformations
+
+The transform stage was modified to match the real API structure and create analysis-ready features, including:
+
+post_id
+comment_id
+email_domain
+body_clean
+body_preview
+name_length
+email_length
+body_length_chars
+body_length_words
+line_count
+is_multiline
+has_long_body
+Key Insight
+
+A major lesson from this project was that raw JSON must be inspected before writing transformation logic. The example code expected userId, but the actual API returned postId, which caused a KeyError. Updating the transform stage to match the real schema made the pipeline work correctly and produced a more useful dataset for analysis.
+
+Future Improvements
+
+Future enhancements could include tokenization, word frequency analysis, sentiment analysis, and visualizations based on the transformed comment text.
+
+
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
