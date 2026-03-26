@@ -24,6 +24,16 @@ repository-code: "https://github.com/denisecase/nlp-04-api-text-data"
 url: "https://github.com/denisecase/nlp-04-api-text-data"
 license: MIT
 
+author:
+  - family-names: Oluwafemi
+    given-names: Salawu
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code_: "https://github.com/Airfirm/nlp-04-api-text-data"
+url_: "https://github.com/Airfirm/nlp-04-api-text-data"
+license_: MIT
+
 abstract: |
   Web Mining and Applied NLP Example Project 4 - retrieving structured
   text data from web APIs, inspecting JSON structure, validating data,

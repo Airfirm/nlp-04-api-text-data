@@ -1,4 +1,4 @@
-# nlp-01-getting-started
+# nlp-04-api_text-data
 
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
@@ -93,7 +93,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/nlp-04-api-text-data
+git clone https://github.com/Airfirm/nlp-04-api-text-data
 cd nlp-04-api-text-data
 code .
 ```
